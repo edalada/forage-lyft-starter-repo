@@ -1,14 +1,14 @@
-from abc import ABC
+#from abc import ABC
 from batterys import Battery
 import sys
 sys.path.insert(0,r"C:\Users\HP\internship\forage")
 #print(sys.path)
-from car import Car
+#from car import Car
 from datetime import datetime
 #datetime.today().date()
-class SpindlerBattery(Battery,Car, ABC):
+class SpindlerBattery(Battery):
     def __init__(self, last_service_date):
-        super().__init__(last_service_date)
+        #super().__init__(last_service_date)
         self.last_service_date = last_service_date
 
     def battery_should_be_serviced(self):

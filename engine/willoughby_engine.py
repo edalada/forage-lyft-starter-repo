@@ -1,13 +1,13 @@
-from abc import ABC
+#from abc import ABC
 import sys
 sys.path.insert(0,r"C:\Users\HP\internship\forage")
 from engines import Engine
 from car import Car
 
 
-class WilloughbyEngine(Engine,Car, ABC):
-    def __init__(self, last_service_date, current_mileage, last_service_mileage):
-        super().__init__(last_service_date)
+class WilloughbyEngine(Engine):
+    def __init__(self, current_mileage, last_service_mileage):
+        #super().__init__(last_service_date)
         self.current_mileage = current_mileage
         self.last_service_mileage = last_service_mileage
 
